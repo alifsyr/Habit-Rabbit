@@ -5,7 +5,7 @@ import './App.css';
 import Home from './modules/Home/Home';
 
 import Login from './modules/Login/Login';
-import Signup from './modules/Signup/Singup';
+import Signup from './modules/Signup/Signup';
 
 import NotFound from './modules/NotFound/NotFound';
 

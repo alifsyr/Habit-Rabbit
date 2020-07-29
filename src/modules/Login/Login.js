@@ -3,6 +3,9 @@ import { Redirect } from 'react-router';
 import { Form, FormGroup, FormControl, FormLabel, Button, Spinner, FormControlProps } from "react-bootstrap";
 import "./Login.css";
 
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 class Login extends Component {
@@ -27,6 +30,8 @@ class Login extends Component {
     const { email, password, isValid } = this.state;
 
     return (
+      <div>
+      <Header/>
       <div className="Login">
         <h1>Habbit Rabbit</h1><br></br>
         <Form noValidate validated={isValid} onSubmit={this.onLogin}>
@@ -66,6 +71,8 @@ class Login extends Component {
                     <span>Kembali</span>
           </Button>
         </Form >
+      </div>
+      <Footer/>
       </div>
     );
   }

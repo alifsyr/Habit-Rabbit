@@ -3,6 +3,9 @@ import { Redirect } from 'react-router';
 import { Form, FormGroup, FormControl, FormLabel, Button, Spinner, FormControlProps } from "react-bootstrap";
 import "./Signup.css";
 
+import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer/Footer";
+
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 class Signup extends Component {
@@ -76,6 +79,8 @@ class Signup extends Component {
 
   render() {
     return (
+      <div>
+      <Header />
       <div className="Signup">
 
         {this.showSignupForm()}
@@ -83,6 +88,8 @@ class Signup extends Component {
         <Button className='back-button' block type="submit" href='/home'>
           <span>Kembali</span>
         </Button>
+      </div>
+      <Footer />
       </div>
     );
   }
