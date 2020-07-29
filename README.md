@@ -2,6 +2,7 @@
 
 **Requirements: Install Node Package Manager (NPM) di https://www.npmjs.com/get-npm atau web lain**<br><br>
 **Habis diclone, run 'npm install' dulu di foldernya**
+**Buat ngestart, run 'npm start'**
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
