@@ -17,9 +17,14 @@
     text-decoration: none;
     background-color: #437ddb;
     color: #dfdfdf;
-    
   }
   
+  .nav-link{
+    text-decoration: none;
+    color: #dfdfdf;
+    padding: 10px 50px;
+  }
+
   ul {
     list-style-type: none;
     margin: 0px;

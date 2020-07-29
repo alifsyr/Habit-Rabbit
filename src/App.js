@@ -3,6 +3,10 @@ import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import './App.css';
 
 import Home from './modules/Home/Home';
+
+import Login from './modules/Login/Login';
+import Signup from './modules/Signup/Singup';
+
 import NotFound from './modules/NotFound/NotFound';
 
 class App extends Component{
@@ -11,8 +15,10 @@ class App extends Component{
           <div className="App">
             <BrowserRouter>
               <Switch>
-                <Route path='/home' exact component={Home} />
                 <Route path='/' exact component={Home} />
+                <Route path='/home' exact component={Home} />
+                <Route path='/login' exact component={Login} />
+                <Route path='/signup' exact component={Signup} />
                 <Route component={ NotFound } />
               </Switch>
             </BrowserRouter>
