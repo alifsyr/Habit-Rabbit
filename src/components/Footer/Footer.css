@@ -20,11 +20,12 @@
   text-align: center;
 }
 
-a.footer-button {
+.foot-link {
   color: #ffffff;
+  padding: 12px;
 }
 
-a.footer-button:hover {
+a.foot-link:hover {
   text-decoration: none;
   color: #dfdfdf;
 }
