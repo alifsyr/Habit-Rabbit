@@ -15,6 +15,7 @@ class Signup extends Component {
     this.state = {
       loading: false,
       email: "",
+      username: "",
       password: "",
       confirmPassword: "",
       confirmationCode: "",
@@ -25,12 +26,12 @@ class Signup extends Component {
   }
 
   showSignupForm = () => {
-    const { email, password, confirmPassword, validated } = this.state;
+    const { email, username, password, confirmPassword, validated } = this.state;
     return (
       <Form noValidate>
         <h1>Habbit Rabbit</h1><br></br>
         <FormGroup controlId="email">
-          <FormLabel>Email</FormLabel>
+          <FormLabel>What's your e-mail?</FormLabel>
           <FormControl
             name="email"
             type="email"
@@ -41,8 +42,20 @@ class Signup extends Component {
             required />
           <FormControl.Feedback type="invalid">Must be a valid email address</FormControl.Feedback>
         </FormGroup>
+        <FormGroup controlId="username">
+          <FormLabel>Create a username</FormLabel>
+          <FormControl
+            name="username"
+            type="username"
+            onChange={(event)=>{this.setState({email:event.target.value})}}
+            value={username}
+            minLength={6}
+            isValid={username.length >= 6}
+            required />
+          <FormControl.Feedback type="invalid">Username has taken</FormControl.Feedback>
+        </FormGroup>
         <FormGroup controlId="password" >
-          <FormLabel>Password</FormLabel>
+          <FormLabel>Create a password</FormLabel>
           <FormControl
             name="password"
             type="password"
@@ -79,17 +92,17 @@ class Signup extends Component {
 
   render() {
     return (
-      <div>
-      <Header />
-      <div className="Signup">
+      <div class="body">
+        <Header />
+        <div className="Signup">
 
-        {this.showSignupForm()}
+          {this.showSignupForm()}
 
-        <Button className='back-button' block type="submit" href='/home'>
-          <span>Kembali</span>
-        </Button>
-      </div>
-      <Footer />
+          <Button className='back-button' block type="submit" href='/home'>
+            <span>Back</span>
+          </Button>
+        </div>
+        <Footer />
       </div>
     );
   }
