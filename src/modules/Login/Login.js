@@ -6,7 +6,7 @@ import "./Login.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
-const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+import { setCookie, getCookie } from "../../services/Cookie";
 
 class Login extends Component {
   constructor(props) {
@@ -15,19 +15,23 @@ class Login extends Component {
     this.state = {
       loading: false,
       redirect: false,
-      email: "",
+      username: "",
       password: "",
-      isValid: false,
     };
   }
 
-  validateForm = () => {
-    return emailRegex.test(this.state.email.toLowerCase()) && this.state.password;
+  login = () => {
+    this.setState({loading:true})
+
+    setCookie('login', true, 2);
+    setCookie('username', this.state.username, 2);
+
+    this.setState({login:true, redirect:true})
   }
 
   render() {
     if (this.state.redirect) return <Redirect to='/' />
-    const { email, password, isValid } = this.state;
+    const { username, password, isValid } = this.state;
 
     return (
       <div>
@@ -36,15 +40,13 @@ class Login extends Component {
         <h1>Habbit Rabbit</h1><br></br>
         <Form noValidate validated={isValid} onSubmit={this.onLogin}>
           <FormGroup controlId="email">
-            <FormLabel>Email</FormLabel>
+            <FormLabel>Username</FormLabel>
             <FormControl
-              name="email"
-              type="email"
-              value={email}
-              onChange={(event)=>{this.setState({email:event.target.value})}}
-              isValid={emailRegex.test(email.toLowerCase())}
+              name="username"
+              type="text"
+              value={username}
+              onChange={(event)=>{this.setState({username:event.target.value})}}
               required />
-            <FormControl.Feedback type="invalid">Must be a valid email address</FormControl.Feedback>
           </FormGroup>
           <FormGroup controlId="password">
             <FormLabel>Password</FormLabel>
@@ -61,7 +63,7 @@ class Login extends Component {
           <Button
             block
             type="submit"
-            disabled={!this.validateForm()}>
+            onClick={()=>{this.login()}}>
             {this.state.loading ?
               <span><Spinner size="sm" animation="border" className="mr-2" />Logging in</span> :
               <span>Log in</span>}
