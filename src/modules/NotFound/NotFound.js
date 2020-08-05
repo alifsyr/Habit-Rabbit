@@ -9,12 +9,13 @@ class NotFound extends React.Component {
         return (
             <>
             <Header />
-            <div className="notfound-background">
-                <div className="notfound-box">
+            <div className="content">
+                <div className="notfound-box mx-auto my-auto">
                     <h3>Halaman tidak ditemukan</h3>
                     <h1>:(</h1>
                 </div>
             </div>
+            <Footer />
             </>
         );
   }

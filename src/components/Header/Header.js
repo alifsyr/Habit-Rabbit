@@ -61,7 +61,7 @@ class Header extends React.Component {
     render() {
         return (
             <div class="navbar"> 
-                <ul class="navbar-left">
+                <ul class="d-flex justify-content-start">
                   <li class="nav-item">
                       <NavLink
                           to="/"
@@ -71,7 +71,7 @@ class Header extends React.Component {
                       </NavLink>
                   </li>
                   </ul>
-                <ul class="navbar-right">
+                <ul class="d-flex justify-content-end">
                   <li class="nav-item">
                       <NavLink
                           to="/home"
