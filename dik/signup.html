@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up - Habit Rabbit</title>
+        <link href="src/signup.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+        <link href="src/files/white-rabbit.png" rel="shortcut icon">
+    </head>
+    <body>
+        <form method="POST"> <!--actionnya blom gua tambah, ntar tambah sendiri yep-->
+            <h1>Sign Up</h1>
+            <label for="nickname">What's your nickname?</label>
+            <input type="text" name="nickname" id="nickname" required>
+            <br>
+            <label for="username">Create a username</label>
+            <input type="text" name="username" id="username" required>
+            <br>
+            <label for="password">Create a password</label>
+            <input type="password" name="password" id="password" minlength="8" required>
+            <br>
+            <input type="submit" value="Sign Up" id="sign-up">
+            <br>
+            <p>Already a member? <a href="signin.html">Click Here!</a></p>
+        </form>
+    </body>
+</html>
