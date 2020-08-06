@@ -5,7 +5,7 @@
 .home-page {
   display: block;
   position: relative;
-  min-height: calc(100% - 8rem);
+  height: calc(100% - 8rem);
 }
 
 ul {
@@ -52,15 +52,23 @@ button {
 
 .lower-home {
   background-color: #fff;
-  height: 13rem;
+  height: 16rem;
 }
 
 p.lower-home-text {
   text-align: left;
   color: #414550;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
   margin: 0;
+  width: 75%;
+  margin-right: 0;
+  right: 0;
+}
+
+.HabRabProgressBar {
+  height: 150px;
+  width: 150px;
 }
 
 .ml-10 {
