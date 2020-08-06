@@ -1,0 +1,76 @@
+.body {
+    height: 100%;
+  }
+  
+  .home-page {
+    display: block;
+    position: relative;
+    min-height: calc(100% - 8rem);
+  }
+  
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  .upper-home {
+    background: #99c7ff;
+    display: block;
+    min-height: 17rem;
+    border-bottom-right-radius: 80% 20%;
+  }
+  
+  p.upper-home-text {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  button {
+    display: block;
+    font-weight: 600;
+    height: 2.5rem;
+    width: 8rem;
+    background-color: white;
+    color: #679BF1;
+    font-size: 15px;
+    border-radius: 1.5rem;
+    border-style: none; 
+  }
+  
+  .Habitrabbit {
+    height: 200px;
+    width: 200px;
+  }
+  
+  .lower-home {
+    background-color: #fff;
+    height: 13rem;
+  }
+  
+  p.lower-home-text {
+    text-align: left;
+    color: #414550;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .ml-10 {
+    margin-left: 100px;
+  }
+  
+  .mr-10 {
+    margin-right: 100px;
+  }
+  
+  a:hover{
+    text-decoration: none;
+  }

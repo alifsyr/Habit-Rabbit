@@ -43,6 +43,15 @@ class Header extends React.Component {
       const message = "Hello, " + getCookie('username')
     
       return(
+        <>
+        <NavLink
+          to="/progress"
+          className="nav-link"
+          activeStyle={{ fontWeight: 'bold' }}
+          >
+          Progress
+        </NavLink>
+
         <div class="dropdown">
           <button class="dropbtn">{message}</button>
           <div class="dropdown-content">
@@ -50,6 +59,7 @@ class Header extends React.Component {
               <a href="/" onClick={(()=>this.logout())}>Logout</a>
           </div>
         </div>
+        </>
       )
     }
     
