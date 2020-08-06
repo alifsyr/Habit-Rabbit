@@ -78,7 +78,9 @@ class Header extends React.Component {
                           to="/"
                           className="nav-link"
                       >
-                        Habit Rabbit
+                        <div className='title'>
+                          <strong>Habit</strong> Rabbit
+                        </div>
                       </NavLink>
                   </li>
                   </ul>
