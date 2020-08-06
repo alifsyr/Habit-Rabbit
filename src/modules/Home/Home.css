@@ -70,3 +70,7 @@ p.lower-home-text {
 .mr-10 {
   margin-right: 100px;
 }
+
+a:hover{
+  text-decoration: none;
+}

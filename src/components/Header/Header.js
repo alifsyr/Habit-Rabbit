@@ -56,6 +56,7 @@ class Header extends React.Component {
     logout() {
       setCookie('login', false, 0)
       setCookie('username', '', 0)
+      setCookie('mbti', '', 0)
     }
 
     render() {

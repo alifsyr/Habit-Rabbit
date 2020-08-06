@@ -30,7 +30,7 @@ class Login extends Component {
   }
 
   render() {
-    if (this.state.redirect) return <Redirect to='/' />
+    if (this.state.redirect) return <Redirect to='/choose-mbti' />
     const { username, password, isValid } = this.state;
 
     return (
@@ -69,7 +69,7 @@ class Login extends Component {
               <span>Log in</span>}
           </Button>
 
-          <Button className='back-button' block type="submit" href='/home'>
+          <Button className='back-button' block type="submit" href='/choose-mbti'>
                     <span>Kembali</span>
           </Button>
         </Form >

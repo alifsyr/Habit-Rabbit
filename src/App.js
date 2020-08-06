@@ -9,6 +9,8 @@ import Signup from './modules/Signup/Signup';
 
 import NotFound from './modules/NotFound/NotFound';
 
+import ChooseMBTI from './modules/ChooseMBTI/ChooseMBTI';
+
 class App extends Component{
   render(){
       return(
@@ -19,6 +21,7 @@ class App extends Component{
                 <Route path='/home' exact component={Home} />
                 <Route path='/login' exact component={Login} />
                 <Route path='/signup' exact component={Signup} />
+                <Route path='/choose-mbti' exact component={ChooseMBTI} />
                 <Route component={ NotFound } />
               </Switch>
             </BrowserRouter>
