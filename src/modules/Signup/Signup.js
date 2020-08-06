@@ -6,6 +6,8 @@ import "./Signup.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
+import { setCookie, getCookie } from "../../services/Cookie";
+
 const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
 class Signup extends Component {
@@ -24,9 +26,20 @@ class Signup extends Component {
       validated: false,
     };
   }
+  
+  signup() {
+    this.setState({loading:true})
+
+    setCookie('login', true, 2);
+    setCookie('username', this.state.username, 2);
+
+    this.setState({login:true, redirect:true})
+  }
 
   showSignupForm = () => {
-    const { email, username, password, confirmPassword, validated } = this.state;
+    if (this.state.redirect) return <Redirect to='/choose-mbti' />
+    
+    const { email, username, password, confirmPassword } = this.state;
     return (
       <Form noValidate>
         <h1>Habbit Rabbit</h1><br></br>
@@ -47,7 +60,7 @@ class Signup extends Component {
           <FormControl
             name="username"
             type="username"
-            onChange={(event)=>{this.setState({email:event.target.value})}}
+            onChange={(event)=>{this.setState({username:event.target.value})}}
             value={username}
             minLength={6}
             isValid={username.length >= 6}
@@ -59,7 +72,7 @@ class Signup extends Component {
           <FormControl
             name="password"
             type="password"
-            onChange={(event)=>{this.setState({email:event.target.value})}}
+            onChange={(event)=>{this.setState({password:event.target.value})}}
             value={password}
             minLength={8}
             isValid={password.length >= 8}
@@ -74,14 +87,14 @@ class Signup extends Component {
           <FormControl
             name="confirmPassword"
             type="password"
-            onChange={(event)=>{this.setState({email:event.target.value})}}
+            onChange={(event)=>{this.setState({confirmPassword:event.target.value})}}
             value={confirmPassword}
             minLength={8}
             isValid={confirmPassword.length >= 8 && password === confirmPassword}
             required />
           <FormControl.Feedback type="invalid">Passwords must be identical</FormControl.Feedback>
         </FormGroup>
-        <Button block type="submit">
+        <Button block type="submit" onClick={()=>this.signup()}>
           {this.state.loading ?
             <span><Spinner size="sm" animation="border" className="mr-2" />Signing up</span> :
             <span>Sign up</span>}
