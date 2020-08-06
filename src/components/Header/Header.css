@@ -41,16 +41,6 @@ li {
   display: inline-block;
 }
 
-.upper-home {
-  background: #99c7ff;
-  height: 200px;
-  border-bottom-right-radius: 20;
-}
-
-.home-page svg {
-  display: block;
-}
-
 .dropdown {
   position: relative;
   display: inline-block;

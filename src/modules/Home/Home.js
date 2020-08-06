@@ -15,7 +15,7 @@ class Home extends React.Component {
             <div class="body">
                 <Header />
                 <div class="home-page">
-                    <div class="upper-home">
+                    <div class="upper-home pt-5">
                         <p class="upper-home-text pb-4 pt-5">
                             Let's improve your good habits with Habit Rabbit !
                         </p>
@@ -42,7 +42,7 @@ class Home extends React.Component {
                             <img className="HabRabProgressBar" src={HabRabProgressBar} />
                         </div>
                     </div>
-                    <div className="row justify-content-center">
+                    <div className="row pt-5 justify-content-center">
                         <small>
                             <a href="https://www.freepik.com/vectors/cartoon">Bunny cartoon vector created by freepik - www.freepik.com</a>
                         </small>
