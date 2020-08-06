@@ -1,39 +1,79 @@
-@media all and (min-width: 480px) {
-  .content {
-    height: 100%;;
-    background: #f8de7e;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .Login {
-    max-width: 350px;
-    height: 100%;
-    padding: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.login {
+  background-color: #F8DE7E;
+  font-family: "Montserrat", "sans-serif";
+  width: 100vw;
+  height: 140vh;
+  margin-top: -160px;
+  padding-top: 50px;
+}
 
-  .login-title {
-    font-size: 40px;
-    font-weight: 600;
-    color: black;
+.login form {
+  background-color: white;
+  margin: 10rem auto;
+  width: 25rem;
+  height: 30rem;
+  padding-top: 1.5rem;
+  border-radius: 3rem;
+}
 
-  }
+.login h1 {
+  text-align: center;
+  background-color: white;
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+}
 
-  .Login form {
-    margin: 0 auto;
-    max-width: 320px;
-  }
+.login label {
+  display: block;
+  color: #679BF1;
+  background-color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 18rem;
+  margin: 0 auto;
+  text-align: left;
+}
 
-  .Login h1 {
-      margin-left: 1.5rem;
-  }
-}  
-  .control-label{
-    color: #fff !important;
-    text-shadow: none !important;
-    font-size: 20px !important;
-    font-weight: 200;
-  }
+.login input {
+  border: 0.5rem solid #8AB9F1;
+  background-color: #8AB9F1;
+  color: white;
+  width: 18rem;
+  height: 2.5rem;
+  border-radius: 5rem;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+#sign-in {
+  width: 8rem;
+  font-size: 1.2rem;
+  height: 3rem;
+  background-color: #679BF1;
+  border-color: #679BF1;
+  margin-top: 1.5rem;
+  border-width: thin;
+}
+
+#sign-in:hover {
+  background-color: white;
+  color: #679BF1;
+  border-color: black;
+}
+
+.login p {
+  font-size: 1rem;
+  color: #679BF1;
+  background-color: white;
+  font-weight: 700;
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.login a {
+  background-color: white;
+  color: black;
+}

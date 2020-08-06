@@ -36,45 +36,22 @@ class Login extends Component {
     return (
       <div>
         <Header/>
-        <div className="content">
-          <div className="Login">
-            <div className="login-title">Sign In</div>
-            <Form noValidate validated={isValid} onSubmit={this.onLogin}>
-              <FormGroup controlId="email">
-                <FormLabel>Username</FormLabel>
-                <FormControl
-                  name="username"
-                  type="text"
-                  value={username}
-                  onChange={(event)=>{this.setState({username:event.target.value})}}
-                  required />
-              </FormGroup>
-              <FormGroup controlId="password">
-                <FormLabel>Password</FormLabel>
-                <FormControl
-                  name="password"
-                  type="password"
-                  value={password}
-                  minLength={8}
-                  onChange={(event)=>{this.setState({password:event.target.value})}}
-                  isValid={password.length >= 8}
-                  required />
-                <FormControl.Feedback type="invalid">Required field</FormControl.Feedback>
-              </FormGroup>
-              <Button
-                block
-                type="submit"
-                onClick={()=>{this.login()}}>
-                {this.state.loading ?
-                  <span><Spinner size="sm" animation="border" className="mr-2" />Logging in</span> :
-                  <span>Log in</span>}
-              </Button>
-
-              <Button className='back-button' block type="submit" href='/choose-mbti'>
-                        <span>Kembali</span>
-              </Button>
-            </Form >
-          </div>
+        <div className='login'>
+          <form>
+            <div className='login-container'>
+                <h1>Log In</h1>
+                <br/>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required onChange={(event)=>{this.setState({username:event.target.value})}}/>
+                <br/>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required onChange={(event)=>{this.setState({password:event.target.value})}}/>
+                <br/>
+                <input type="submit" value="Log In" id="sign-in" onClick={()=>this.login()}/>
+                <br/>
+                <p>Don't have an account? <a href="/signup">Click Here!</a></p>
+            </div>
+          </form>
         </div>
         <Footer/>
       </div>

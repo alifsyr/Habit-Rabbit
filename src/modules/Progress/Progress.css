@@ -1,0 +1,43 @@
+.progress-container{
+    background-color:#99C7FF;
+    height: 100vh;
+}
+
+.progress-container h1 {
+    color:white;
+    padding-top: 3vw;
+    padding-left: 2vw;
+}
+
+.progress-container table {
+    width:100%;
+}
+
+.myProgress {
+    width: 100%;
+    height: 50px; 
+    background-color: white; 
+    color:#444853; 
+    border-radius: 25px;
+    margin-top: 1vw;
+}
+
+.myBar {
+    width: 70%; 
+    height: 50px; 
+    background-color:#FDFD96; 
+    border-radius: 25px;
+    margin-top: 1vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
+}
+
+.progress-container .btn {
+    background-color: #7B7BFD ;
+    width: 60%;
+    border:none;
+    border-radius: 25px; 
+    color:white; 
+    height: 50px;
+    margin-top: 1vw;
+}
