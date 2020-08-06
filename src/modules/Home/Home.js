@@ -4,6 +4,7 @@ import './Home.css';
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import Habitrabbit from "../../assets/white-rabbit.png";
+import { getCookie } from '../../services/Cookie';
 
 console.log(Habitrabbit);
 
@@ -19,7 +20,11 @@ class Home extends React.Component {
                         </p>
                         <div className="row row-cols-3">
                             <div className="col col-md order-1 pt-2">
-                                <button className="mx-auto" type="submit" id="get-started">Get Started</button>
+                                {!getCookie('login')?
+                                <button className="mx-auto" type="submit" id="get-started"><a href="/signup">Get Started</a></button>
+                                :
+                                <></>
+                                }
                             </div>
                             <div className="col col-md mr-0 pr-0 order-0">
                                 <img className="Habitrabbit" src={Habitrabbit} />
