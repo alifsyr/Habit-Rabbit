@@ -70,8 +70,8 @@ class Login extends Component {
                   <span>Log in</span>}
               </Button>
 
-              <Button className='back-button' block type="submit" href='/choose-mbti'>
-                        <span>Kembali</span>
+              <Button className='back-button' block type="submit" href='/'>
+                        <span>Back</span>
               </Button>
             </Form >
           </div>
