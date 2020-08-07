@@ -1,0 +1,95 @@
+[
+   {
+     "type":"E",
+     "challenge":[
+   "Dance to your favpurite songs",
+   "Help someone else",
+   "Surround yourself",
+   "Talk with a friend",
+   "Call an old friend for no reason",
+   "Put down your gadgets",
+   "Eat/drink something you've never tried before"
+   ]
+    },
+    {
+     "type":"I",
+     "challenge":[
+   "Get yourself a pet",
+   "Swimming",
+   "Hot tubbing",
+   "Go for a walk",
+   "Indulge in 1 bad thing",
+   "See an old album or video",
+   "Surround yourself",
+   "Talk to a parent",
+   "Start a journal",
+   "Meditate"
+   ]
+    },
+    {
+     "type":"N",
+     "challenge":[
+   "Swimming",
+   "Hot Tubbing",
+   "Indulge in 1 bad thing",
+   "Explore places near your neighborhood",
+   "Meditate"
+   ]
+    },
+    {
+     "type":"S",
+     "challenge":[
+   "watch something funny to make you laugh",
+   "get a massage",
+   "help someone else",
+   "see an old album or video",
+   "clean your room",
+   "incense your house/room",
+   "go outside, sit somewhere, look at old people passing by"
+   ]
+    },
+    {
+     "type":"T",
+     "challenge":[
+   "Hot tubbing",
+   "Chew a gum",
+   "get a massage",
+   "go for a walk",
+   "put down your gadgets",
+   "eat/drink something you’ve never tried before"
+   ]
+    },
+    {
+     "type":"F",
+     "challenge":[
+   "Hot tubbing",
+   "Chew a gum",
+   "get a massage",
+   "go for a walk",
+   "put down your gadgets",
+   "eat/drink something you’ve never tried before"
+   ]
+    },
+    {
+     "type":"J",
+     "challenge":[
+   "Go for a walk",
+   "Clean your room",
+   "Go outside, sit somewhere, look at old people passing by",
+   "Start a journal",
+   "Write a blog article"
+   ]
+    },
+    {
+     "type":"P",
+     "challenge":[
+   "Scartching/doodling",
+   "Indulge in 1 bad thing",
+   "Change your environment",
+   "Incense your house/room",
+   "Go outsoide,sit somewhere,look at old people passing by",
+   "Call an old friend for no reason",
+   "Decor/redecorate your room"
+   ]
+    }
+]
