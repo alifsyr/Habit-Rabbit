@@ -3,9 +3,16 @@ import './Home.css';
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+
+/*Images*/
 import Habitrabbit from "../../assets/white-rabbit.png";
-import { getCookie } from '../../services/Cookie';
 import HabRabProgressBar from '../../assets/ProgressBar.png';
+import Infographic1 from  "../../assets/infographic1.jpg";
+import Infographic2 from  "../../assets/infographic2.jpg";
+import Infographic3 from  "../../assets/infographic3.jpg";
+
+/*Services*/
+import { getCookie } from '../../services/Cookie';
 
 console.log(Habitrabbit);
 
@@ -42,9 +49,22 @@ class Home extends React.Component {
                             <img className="HabRabProgressBar" src={HabRabProgressBar} />
                         </div>
                     </div>
+                    <div className="infographic">
+                        <div className="info-content">
+                            <img src={Infographic1}/>
+                        </div>
+                        <div className="info-content">
+                            <img src={Infographic2}/>
+                        </div>
+                    </div>
+                    <div className="infographic">
+                        <div className="info-content">
+                            <img src={Infographic3}/>
+                        </div>
+                    </div>
                     <div className="row pt-5 justify-content-center">
                         <small>
-                            <a href="https://www.freepik.com/vectors/cartoon">Bunny cartoon vector created by freepik - www.freepik.com</a>
+                            <a href="https://www.freepik.com/vectors/cartoon">Bunny cartoon vector created by Freepik</a>
                         </small>
                     </div>
                 </div>

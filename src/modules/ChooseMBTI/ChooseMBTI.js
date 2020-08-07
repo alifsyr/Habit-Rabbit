@@ -40,6 +40,7 @@ class ChooseMBTI extends React.Component {
                     <input type="button" class="btn" value="ESFP" onClick={()=>setCookie('mbti','ESFP',2)} href='/home'/>
                 </form>
                 <Button variant='success' className='submit-button' href="/home" type="submit">Submit</Button> 
+                <p>Don't know about your MBTI? <a href="https://www.16personalities.com/free-personality-test">Take a test here</a></p>
         </div>
         )
     }
