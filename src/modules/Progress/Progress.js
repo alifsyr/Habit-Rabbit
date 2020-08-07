@@ -6,8 +6,56 @@ import Footer from "../../components/Footer/Footer";
 
 import { setCookie, getCookie } from "../../services/Cookie";
 
+import data from './challenges.json';
+
 class Progress extends React.Component {
+    getMBTI() {
+        const MBTI = []
+        for (let c of getCookie('mbti')){
+            MBTI.push(c)
+        }
+        console.log(MBTI)
+        return MBTI;
+    }
+
+    getRandomChallenges() {
+        const MBTI = this.getMBTI();
+        
+        var randomChallenges = []
+
+        for(var i = 0; i < data.length; i++) {
+            var obj = data[i];
+            
+            if(obj.type == MBTI[0]){
+                randomChallenges = obj.challenge
+            }
+            if(obj.type == MBTI[1]){
+                randomChallenges.concat(obj.challenge)
+            }
+            if(obj.type == MBTI[2]){
+                randomChallenges.concat(obj.challenge)
+            }
+            if(obj.type == MBTI[4]){
+                randomChallenges.concat(obj.challenge)
+            }
+        }
+
+        var selectedChallenges = [];
+
+        while(selectedChallenges.length < 3) {
+            var id = Math.floor(Math.random() * obj.challenge.length);
+
+            if(!selectedChallenges.includes(randomChallenges[id])){
+            selectedChallenges.push(randomChallenges[id])
+            }
+        }
+        
+        return (selectedChallenges)
+    }
+
     render() {
+        const challenges = this.getRandomChallenges();
+
         return(
             <>
             <Header/>
@@ -19,8 +67,8 @@ class Progress extends React.Component {
                 <tr>
                     <th>
                         <div className="myProgress">
-                            <div className="myBar">
-                                Drink enough water
+                            <div className="myBar1">
+                                {challenges[0]}
                             </div>
                         </div>
                     </th>
@@ -33,8 +81,8 @@ class Progress extends React.Component {
                 <tr>
                     <th>
                         <div className="myProgress">
-                            <div className="myBar">
-                                Workout for 10 minutes everyday
+                            <div className="myBar2">
+                                {challenges[1]}
                             </div>
                         </div>
                     </th>
@@ -47,8 +95,8 @@ class Progress extends React.Component {
                 <tr>
                     <th>
                         <div className="myProgress">
-                            <div className="myBar">
-                                Make new friends
+                            <div className="myBar3">
+                                {challenges[2]}
                             </div>
                         </div>
                     </th>

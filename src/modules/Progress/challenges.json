@@ -1,0 +1,26 @@
+[
+   {
+     "type":"E",
+     "challenge":[
+   "Minum air",
+   "Makan nasi",
+   "Tidur"
+   ]
+    },
+    {
+     "type":"I",
+     "challenge":[
+   "Minum nasi",
+   "Makan air",
+   "Olahraga"
+   ]
+    },
+    {
+     "type":"N",
+     "challenge":[
+   "Main",
+   "Lari",
+   "Belajar"
+   ]
+    }
+]
