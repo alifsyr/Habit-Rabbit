@@ -14,8 +14,6 @@ import Infographic3 from  "../../assets/infographic3.jpg";
 /*Services*/
 import { getCookie } from '../../services/Cookie';
 
-console.log(Habitrabbit);
-
 class Home extends React.Component {
     render() {
         return (

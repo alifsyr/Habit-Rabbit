@@ -13,34 +13,36 @@ class ChooseMBTI extends React.Component {
     showMBTI() {
         return(
         <div className='choose-mbti'>
-            <h1>
+            <div className="mbti-text h1 pb-4">
                 Hi {getCookie("username")}, Welcome to Habit Rabbit!
-            </h1>
-            <h2>
+            </div>
+            <div className="mbti-text h5 pb-4">
                 Choose your MBTI below here
-            </h2>
+            </div>
                 <form class="row1">
-                    <input type="button" class="btn" value="INTP" onClick={()=>setCookie('mbti','INTP',2)} />
-                    <input type="button" class="btn" value="INTJ" onClick={()=>setCookie('mbti','INTJ',2)} href='/home'/>
-                    <input type="button" class="btn" value="INFJ" onClick={()=>setCookie('mbti','INFJ',2)} href='/home'/>
-                    <input type="button" class="btn" value="INFP" onClick={()=>setCookie('mbti','INFP',2)} href='/home'/>
-                    <input type="button" class="btn" value="ISTJ" onClick={()=>setCookie('mbti','ISTJ',2)} href='/home'/>
-                    <input type="button" class="btn" value="ISFJ" onClick={()=>setCookie('mbti','ISFJ',2)} href='/home'/>
-                    <input type="button" class="btn" value="ISTP" onClick={()=>setCookie('mbti','ISTP',2)} href='/home'/>
-                    <input type="button" class="btn" value="ISFP" onClick={()=>setCookie('mbti','ISFP',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="INTP" onClick={()=>setCookie('mbti','INTP',2)} />
+                    <input type="button" class="btn-circle m-2" value="INFJ" onClick={()=>setCookie('mbti','INFJ',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="INFP" onClick={()=>setCookie('mbti','INFP',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ISTJ" onClick={()=>setCookie('mbti','ISTJ',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="INTJ" onClick={()=>setCookie('mbti','INTJ',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ISFJ" onClick={()=>setCookie('mbti','ISFJ',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ISTP" onClick={()=>setCookie('mbti','ISTP',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ISFP" onClick={()=>setCookie('mbti','ISFP',2)} href='/home'/>
                 </form>
                 <form class="row2">
-                    <input type="button" class="btn" value="ENTJ" onClick={()=>setCookie('mbti','ENTJ',2)} href='/home'/>
-                    <input type="button" class="btn" value="ENTP" onClick={()=>setCookie('mbti','ENTP',2)} href='/home'/>
-                    <input type="button" class="btn" value="ENFJ" onClick={()=>setCookie('mbti','ENFJ',2)} href='/home'/>
-                    <input type="button" class="btn" value="ENFP" onClick={()=>setCookie('mbti','ENFP',2)} href='/home'/>
-                    <input type="button" class="btn" value="ESTJ" onClick={()=>setCookie('mbti','ESTJ',2)} href='/home'/>
-                    <input type="button" class="btn" value="ESFJ" onClick={()=>setCookie('mbti','ESFJ',2)} href='/home'/>
-                    <input type="button" class="btn" value="ESTP" onClick={()=>setCookie('mbti','ESTP',2)} href='/home'/>
-                    <input type="button" class="btn" value="ESFP" onClick={()=>setCookie('mbti','ESFP',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ENTJ" onClick={()=>setCookie('mbti','ENTJ',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ENTP" onClick={()=>setCookie('mbti','ENTP',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ENFJ" onClick={()=>setCookie('mbti','ENFJ',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ENFP" onClick={()=>setCookie('mbti','ENFP',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ESTJ" onClick={()=>setCookie('mbti','ESTJ',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ESFJ" onClick={()=>setCookie('mbti','ESFJ',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ESTP" onClick={()=>setCookie('mbti','ESTP',2)} href='/home'/>
+                    <input type="button" class="btn-circle m-2" value="ESFP" onClick={()=>setCookie('mbti','ESFP',2)} href='/home'/>
                 </form>
-                <Button variant='success' className='submit-button' href="/home" type="submit">Submit</Button> 
-                <p>Don't know about your MBTI? <a href="https://www.16personalities.com/free-personality-test">Take a test here</a></p>
+                <Button variant='success' className='submit-button mt-5' href="/home" type="submit">Submit</Button> 
+                <div className="mbti-text h6 mt-3">
+                    Don't know about your MBTI? <a href="https://www.16personalities.com/free-personality-test">Take a test here</a>
+                </div>
         </div>
         )
     }
@@ -60,6 +62,31 @@ class ChooseMBTI extends React.Component {
             </>
         )
     }
+
+    // var Button = React.createClass({
+    //     getInitialState: function() {
+    //       return {
+    //         bgColor: 'red'
+    //       }
+          
+    //     },
+        
+    //     handleClick: function() {
+    //       this.setState({
+    //         bgColor: 'blue'
+    //       })
+    //     },
+        
+    //     render : function() {
+    //       return (
+    //         <div>
+    //           <button 
+    //             onClick={this.handleClick} 
+    //             style={{backgroundColor:this.state.bgColor}}>Button</button>
+    //         </div>
+    //       )
+    //     }
+    // });
 }
 
 export default ChooseMBTI;

@@ -8,20 +8,31 @@
     padding-bottom: 100px;
 }
 
-.choose-mbti h1{
-    font-family: Monsterrat; 
-    color:white;
+.mbti-text {
+    color: #fff;
 }
-.choose-mbti h2{
-    font-family: Monsterrat; 
-    color:white;
+
+.btn-circle { 
+    width: 50px; 
+    height: 50px; 
+    padding: 7px 10px; 
+    border-radius: 25px; 
+    font-size: 12px; 
+    font-weight: 600;
+    text-align: center;
+    background-color: #fff;
+    color:#444853;
+    border-style: hidden;
+}
+
+.btn-circle:active {
+    background-color: #3e87e0;
 }
 
 .choose-mbti .btn{
-    margin:20px; 
-    border-radius:30%; 
     border-style: hidden; 
-    background-color: white; 
+    background-color: white;
+    font-weight: 600;
     color:#444853;
 }
 
