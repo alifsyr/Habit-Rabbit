@@ -6,7 +6,7 @@ import "./Login.css";
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 
-const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+import { setCookie, getCookie } from "../../services/Cookie";
 
 class Login extends Component {
   constructor(props) {
@@ -15,64 +15,45 @@ class Login extends Component {
     this.state = {
       loading: false,
       redirect: false,
-      email: "",
+      username: "",
       password: "",
-      isValid: false,
     };
   }
 
-  validateForm = () => {
-    return emailRegex.test(this.state.email.toLowerCase()) && this.state.password;
+  login = () => {
+    this.setState({loading:true})
+
+    setCookie('login', true, 2);
+    setCookie('username', this.state.username, 2);
+
+    this.setState({login:true, redirect:true})
   }
 
   render() {
-    if (this.state.redirect) return <Redirect to='/' />
-    const { email, password, isValid } = this.state;
+    if (this.state.redirect) return <Redirect to='/choose-mbti' />
+    const { username, password, isValid } = this.state;
 
     return (
       <div>
-      <Header/>
-      <div className="Login">
-        <h1>Habbit Rabbit</h1><br></br>
-        <Form noValidate validated={isValid} onSubmit={this.onLogin}>
-          <FormGroup controlId="email">
-            <FormLabel>Email</FormLabel>
-            <FormControl
-              name="email"
-              type="email"
-              value={email}
-              onChange={(event)=>{this.setState({email:event.target.value})}}
-              isValid={emailRegex.test(email.toLowerCase())}
-              required />
-            <FormControl.Feedback type="invalid">Must be a valid email address</FormControl.Feedback>
-          </FormGroup>
-          <FormGroup controlId="password">
-            <FormLabel>Password</FormLabel>
-            <FormControl
-              name="password"
-              type="password"
-              value={password}
-              minLength={8}
-              onChange={(event)=>{this.setState({password:event.target.value})}}
-              isValid={password.length >= 8}
-              required />
-            <FormControl.Feedback type="invalid">Required field</FormControl.Feedback>
-          </FormGroup>
-          <Button
-            block
-            type="submit"
-            disabled={!this.validateForm()}>
-            {this.state.loading ?
-              <span><Spinner size="sm" animation="border" className="mr-2" />Logging in</span> :
-              <span>Log in</span>}
-          </Button>
-
-          <Button className='back-button' block type="submit" href='/home'>
-                    <span>Kembali</span>
-          </Button>
-        </Form >
-      </div>
-      <Footer/>
+        <Header/>
+        <div className='login'>
+          <form>
+            <div className='login-container'>
+                <h1>Log In</h1>
+                <br/>
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" required onChange={(event)=>{this.setState({username:event.target.value})}}/>
+                <br/>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required onChange={(event)=>{this.setState({password:event.target.value})}}/>
+                <br/>
+                <input type="submit" value="Log In" id="sign-in" onClick={()=>this.login()}/>
+                <br/>
+                <p>Don't have an account? <a href="/signup">Click Here!</a></p>
+            </div>
+          </form>
+        </div>
+        <Footer/>
       </div>
     );
   }

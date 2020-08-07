@@ -1,0 +1,35 @@
+* {
+    font-family: "Montserrat", "sans-serif";
+}
+
+#atas {
+    background-color: #99C7FF;
+    height: 58rem;
+}
+
+#atas p {
+    font-weight: 600px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10rem;
+}
+
+#bawah {
+    background-color: white;
+    height: 44rem;
+}
+
+button {
+    display: block;
+    margin: 5rem auto;
+    height: 4rem;
+    width: 16rem;
+    background-color: white;
+    color: #679BF1;
+    font-size: 1.5rem;
+    border-radius: 3rem;
+    border-style: none; 
+}

@@ -1,34 +1,35 @@
-.notfound-background {
-    background-color: #FAFAFA;
-  }
-  
-  .notfound-box {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  
-    position: absolute;
-    width: 350px;
-    height: 217px;
-    left: 570px;
-    top: 100px;
-  
-    background: white;
-    border-radius: 20px;
-  
-    justify-content: center;
-  
-    margin-left: 30px;
-  }
-  
-  .notfound-box h3 {
-    margin-top: 20px;
-    color: black;
-  }
-  
-  .notfound-box h1 {
-    margin-top: 20px;
-    font-size: 100px;
-    color: black;
-  }
-  
+.content {
+  padding-bottom: 8rem;
+  padding-left: 40rem;
+  background-color: #FAFAFA;
+  min-height: calc(100% - 8rem);
+}
+
+.notfound-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  position: absolute;
+  width: 350px;
+  height: 217px;
+  top: 100px;
+
+  background: white;
+  border-radius: 20px;
+
+  justify-content: center;
+
+  margin-left: 30px;
+}
+
+.notfound-box h3 {
+  margin-top: 20px;
+  color: black;
+}
+
+.notfound-box h1 {
+  margin-top: 20px;
+  font-size: 100px;
+  color: black;
+}

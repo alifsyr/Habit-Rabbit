@@ -7,14 +7,16 @@ import Footer from "../../components/Footer/Footer";
 class NotFound extends React.Component {
     render() {
         return (
-            <div className="notfound-background">
+            <>
             <Header />
-                <div className="notfound-box">
+            <div className="content">
+                <div className="notfound-box mx-auto my-auto">
                     <h3>Halaman tidak ditemukan</h3>
                     <h1>:(</h1>
                 </div>
-            <Footer />
             </div>
+            <Footer />
+            </>
         );
   }
 }

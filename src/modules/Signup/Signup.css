@@ -1,50 +1,79 @@
-@media all and (min-width: 480px) {
-    .Signup {
-      max-width: 350px;
-      height: 100%;
-      padding: 30px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      color: black;
-    }
-  
-    .Signup form {
-      margin: 0 auto;
-      max-width: 320px;
-    }
+.signup {
+  background-color: #F8DE7E;
+  font-family: "Montserrat", "sans-serif";
+  width: 100vw;
+  height: 140vh;
+  margin-top: -160px;
+  padding-top: 50px;
+}
 
-    .Signup h1 {
-      margin-left: 1.5rem;
-  }
-  }
-  
-  .Signup form span.help-block {
-    font-size: 14px;
-    padding-bottom: 10px;
-    color: #999;
-  }
-  
-  .control-label{
-      color: #fff !important;
-    text-shadow: none !important;
-    font-size: 20px !important;
-    font-weight: 200;
-  }
-  
-  .Signup img {
-    width: 200px;
-    height: 100px;
-  
-    margin-left: 40px;
-    margin-bottom: 40px;
-  }
-  
-  .back-button {
-    margin-top: 10px;
-  }
-  
-  .back-button span{
-    color: #fff !important;
-  }
-  
+.signup form {
+  background-color: white;
+  border-radius: 3rem;
+  margin: 10rem auto;
+  width: 25rem;
+  height: 35rem;
+  padding-top: 1.5rem;
+}
+
+.signup h1 {
+  text-align: center;
+  background-color: white;
+  margin-top: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.signup label {
+  display: block;
+  color: #679BF1;
+  background-color: white;
+  font-size: 0.9rem;
+  font-weight: 700;
+  width: 18rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.signup input {
+  border: 0.5rem solid #8AB9F1;
+  background-color: #8AB9F1;
+  color: white;
+  width: 18rem;
+  height: 2.5rem;
+  border-radius: 5rem;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.5rem;
+}
+
+#sign-up {
+  width: 8rem;
+  font-size: 1.2rem;
+  height: 3rem;
+  background-color: #679BF1;
+  border-color: #679BF1;
+  margin-top: 1.5rem;
+  border-width: thin;
+}
+
+#sign-up:hover {
+  background-color: white;
+  color: #679BF1;
+  border-color: black;
+}
+
+.signup p {
+  font-size: 1rem;
+  color: #679BF1;
+  background-color: white;
+  font-weight: 700;
+  width: 20rem;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.signup a {
+  background-color: white;
+  color: black;
+}

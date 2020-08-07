@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .profile{
+            background-color: #99C7FF;
+            height: 50vh;
+            border-bottom-left-radius: 30% 10%;
+            border-bottom-right-radius: 30% 10%;
+        }
+        .friends{
+            background-color: #ffffff;
+            height: 50vh;
+        }
+        body{
+            background-color: white;
+            margin:0;
+            padding:0;
+        }
+        .search{
+            border-radius: 16px;
+            background-color:#99C7FF ;
+            border:none;
+            float:right;
+            height: 25px;
+        }
+        table{
+            width:100%;
+            border-color:#679BF1;
+            border-radius: 16px;
+            color: white;
+        }
+        .profile{
+            text-align: center;
+            color:white
+        }
+        th{
+            background-color:#99C7FF ;
+            width:50%;
+            border-radius: 16px;
+        }
+        .add{
+            background-color: transparent;
+            border: none;
+        }
+        .message{
+            background-color: transparent;
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile" >
+        <img src="profile-picture.png">
+        <h1>
+            Hello "Your Nickname"!
+        </h1>
+        <h1>
+            Golden Badge
+        </h1>
+    </div>
+    <div class="friends" >
+        <h1 style="color:#679BF1">
+            Friends
+        </h1>
+        <h2 style="color:#99C7FF; float:left">
+            My Friends
+        </h2>
+        <input class="search" type="search" placeholder="Search..." aria-label="Search" >
+    </div>
+    <div>
+        <table>
+            <tr>
+                <th>
+                    <img src="golden.png">
+                </th>
+                <th>
+                    John Doe
+                </th>
+                <th>
+                    <input type="button" class="message" value="Send a message" style="color:white">
+                </th>
+                <th>
+                    Already your friend
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="golden.png">
+                </th>
+                <th>
+                    Jane Doe
+                </th>
+                <th>
+                    <input type="button" class="message" value="Send a message" style="color:white">
+                </th>
+                <th>
+                    Already your friend
+                </th>
+            </tr>
+            <tr>
+                <th>
+                    <img src="golden.png">
+                </th>
+                <th>
+                    Anonymous
+                </th>
+                <th>
+                    Private Account
+                </th>
+                <th>
+                    <input type="button" class="add" value="Add as a friend" style="color:white">
+                </th>
+            </tr>
+        </table>
+    </div>
+   
+</body>
+</html>
