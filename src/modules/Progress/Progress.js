@@ -9,6 +9,17 @@ import { setCookie, getCookie } from "../../services/Cookie";
 import data from './challenges.json';
 
 class Progress extends React.Component {
+    showCountdown() {
+        var date = new Date()
+        date.setDate(date.getDate() + 1);
+
+        return(
+            <div>
+                <h3>Your challenges will reset on : {date.getDate()}-{date.getMonth()}-{date.getFullYear()}  {date.getHours()}:{date.getMinutes()}:{date.getSeconds()}</h3>
+            </div>
+        )
+    }
+
     getMBTI() {
         const MBTI = []
         for (let c of getCookie('mbti')){
@@ -59,6 +70,7 @@ class Progress extends React.Component {
             <h1>
                 See your Progress here
             </h1>
+            <h1>{this.showCountdown()}</h1>
             <table>
                 <tr>
                     <th>

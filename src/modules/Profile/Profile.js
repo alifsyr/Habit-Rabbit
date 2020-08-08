@@ -8,6 +8,7 @@ import { setCookie, getCookie } from "../../services/Cookie";
 
 import ProfilePicture from '../../assets/profile-picture.png';
 import Golden from '../../assets/golden.png';
+import Platinum from '../../assets/platinum.png';
 
 class Profile extends React.Component {
     render() {
@@ -20,7 +21,7 @@ class Profile extends React.Component {
                     Hello, {getCookie('username')}
                 </h1>
                 <h1>
-                    Golden Badge
+                    Golden Badge <div className='logo'><img src={Golden}/></div>
                 </h1>
             </div>
             <div class="friends" >
@@ -47,7 +48,7 @@ class Profile extends React.Component {
                         </th>
                     </tr>
                     <tr>
-                        <img src={Golden}/>
+                        <img src={Platinum}/>
                         <th>
                             Jane Doe
                         </th>

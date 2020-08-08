@@ -63,4 +63,6 @@ th{
 .logo img{
     height: 50px;
     width: 50px;
+    margin-top: 2vh;
+    margin-bottom: 3vh;
 }
