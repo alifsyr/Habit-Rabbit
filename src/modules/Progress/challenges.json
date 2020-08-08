@@ -2,25 +2,94 @@
    {
      "type":"E",
      "challenge":[
-   "Minum air",
-   "Makan nasi",
-   "Tidur"
+   "Dance to your favourite songs",
+   "Help someone else",
+   "Surround yourself",
+   "Talk with a friend",
+   "Call an old friend for no reason",
+   "Put down your gadgets",
+   "Eat/drink something you've never tried before"
    ]
     },
     {
      "type":"I",
      "challenge":[
-   "Minum nasi",
-   "Makan air",
-   "Olahraga"
+   "Get yourself a pet",
+   "Swimming",
+   "Hot tubbing",
+   "Go for a walk",
+   "Indulge in 1 bad thing",
+   "See an old album or video",
+   "Surround yourself",
+   "Talk to a parent",
+   "Start a journal",
+   "Meditate"
    ]
     },
     {
      "type":"N",
      "challenge":[
-   "Main",
-   "Lari",
-   "Belajar"
+   "Swimming",
+   "Hot Tubbing",
+   "Indulge in 1 bad thing",
+   "Explore places near your neighborhood",
+   "Meditate"
+   ]
+    },
+    {
+     "type":"S",
+     "challenge":[
+   "Watch something funny to make you laugh",
+   "Get a massage",
+   "Help someone else",
+   "See an old album or video",
+   "Clean your room",
+   "Incense your house/room",
+   "Go outside, sit somewhere, look at old people passing by"
+   ]
+    },
+    {
+     "type":"T",
+     "challenge":[
+   "Hot tubbing",
+   "Chew a gum",
+   "Get a massage",
+   "Go for a walk",
+   "Put down your gadgets",
+   "Eat/drink something you’ve never tried before"
+   ]
+    },
+    {
+     "type":"F",
+     "challenge":[
+   "Hot tubbing",
+   "Chew a gum",
+   "Get a massage",
+   "Go for a walk",
+   "Put down your gadgets",
+   "Eat/drink something you’ve never tried before"
+   ]
+    },
+    {
+     "type":"J",
+     "challenge":[
+   "Go for a walk",
+   "Clean your room",
+   "Go outside, sit somewhere, look at old people passing by",
+   "Start a journal",
+   "Write a blog article"
+   ]
+    },
+    {
+     "type":"P",
+     "challenge":[
+   "Scartching/doodling",
+   "Indulge in 1 bad thing",
+   "Change your environment",
+   "Incense your house/room",
+   "Go outsoide,sit somewhere,look at old people passing by",
+   "Call an old friend for no reason",
+   "Decor/redecorate your room"
    ]
     }
 ]
