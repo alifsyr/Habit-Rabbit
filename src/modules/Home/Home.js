@@ -52,7 +52,7 @@ class Home extends React.Component {
                         <p class="quote-right pt-5">“Mental health problems don’t define who you are. They are something you experience. You walk in the rain and you feel the rain, but, importantly, <strong>YOU ARE NOT THE RAIN</strong>.” — Matt Haig</p>
                         </div>
                     </div>
-                    <div className="infographic">
+                    <div className="infographic-1">
                         <div className="info-content">
                             <img src={Infographic1}/>
                         </div>
@@ -62,7 +62,7 @@ class Home extends React.Component {
                         <p class="quote-left pt-5">“I found that with depression, one of the most important things you can realize is that <strong>you’re not alone</strong>. You’re not the first to go through it, you’re not gonna be the last to go through it,” — Dwayne Johnson</p>
                         </div>
                     </div>
-                    <div className="infographic">
+                    <div className="infographic-2">
                         <div className="info-content">
                             <img src={Infographic2}/>
                         </div>
@@ -72,7 +72,7 @@ class Home extends React.Component {
                         <p class="quote-right pt-5">“<strong>Mental health</strong>…is not a destination, but a process. It’s about how you drive, not where you’re going.” – Noam Shpancer</p>
                         </div>
                     </div>
-                    <div className="infographic">
+                    <div className="infographic-1">
                         <div className="info-content">
                             <img src={Infographic3}/>
                         </div>
