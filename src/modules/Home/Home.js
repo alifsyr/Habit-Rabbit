@@ -24,7 +24,7 @@ class Home extends React.Component {
                         <p class="upper-home-text pb-4 pt-5">
                             Let's improve your good habits with Habit Rabbit !
                         </p>
-                        <div className="row row-cols-3">
+                        <div className="row">
                             <div className="col col-md order-1 pt-2">
                                 {!getCookie('login')?
                                 <button className="mx-auto" type="submit" id="get-started"><a href="/signup">Get Started</a></button>
@@ -35,9 +35,8 @@ class Home extends React.Component {
                             <div className="col col-md ml-1 mr-0 pr-0 order-0">
                                 <img className="Habitrabbit" src={Habitrabbit} />
                             </div>
-                            <div className="col col-md mr-0 pr-0 order-2"></div>
+                            <div className="col mr-0 pr-0 order-2"></div>
                         </div>
-                        {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 220"><path fill="yellow" d="M 0 200 Q 750 200 800 150 L 800 200 Z"/></svg> */}
                     </div>
                     <div class="lower-home pt-5 row justify-content-between">
                         <div className="col-7 lower-home-text ml-5">
@@ -47,13 +46,13 @@ class Home extends React.Component {
                             <img className="HabRabProgressBar" src={HabRabProgressBar} />
                         </div>
                     </div>
-                    <div class="lower-home pt-5 row justify-content-between">
+                    <div class="lower-home pt-5 row justify-content-end">
                         <div className="col-7 lower-home-text ml-5">
                         <p class="quote-right pt-5">“Mental health problems don’t define who you are. They are something you experience. You walk in the rain and you feel the rain, but, importantly, <strong>YOU ARE NOT THE RAIN</strong>.” — Matt Haig</p>
                         </div>
                     </div>
-                    <div className="infographic-1">
-                        <div className="info-content">
+                    <div className="infographic-1 justify-content-start">
+                        <div className="info-content ml-25 ">
                             <img src={Infographic1}/>
                         </div>
                     </div>

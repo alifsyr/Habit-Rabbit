@@ -1,65 +1,107 @@
 .profile{
     background-color: #99C7FF;
-    border-bottom-left-radius: 30% 10%;
-    border-bottom-right-radius: 30% 10%;
+    border-bottom-left-radius: 90% 20%;
+    border-bottom-right-radius: 90% 20%;
+    height: 580px;
 }
-.friends{
-    background-color: #ffffff;
-}
-.friends h1{
+
+.friends-title {
     color:#679BF1;
 }
-.friends h2{
+
+.friends-desc {
     color:#99C7FF; 
     float:left;
 }
+
 body{
     background-color: white;
     margin:0;
     padding:0;
 }
+
 .search{
-    border-radius: 16px;
+    border-radius: 20px;
     background-color:#99C7FF ;
-    border:none;
-    float:right;
+    color: #fff;
+    border: none;
+    float: right;
     height: 40px;
     padding-left: 10px;
 }
-table{
-    width:100%;
-    border-color:#679BF1;
-    border-radius: 16px;
+
+.friends {
+    border: solid 3px #679BF1;
+    border-radius: 25px;
     color: white;
     margin-top: 5%;
 }
+
+.friends-header {
+    overflow: auto;
+}
+
+.friends-table {
+    margin: 10px;
+}
+
 .profile{
     text-align: center;
     color:white
 }
-.profile img{
+
+.btn-friends {
+    height: 32px;
+    border-radius: 20px;
+    background-color:#99C7FF;
+    text-align: center;
+
+    margin: 8px;
+    margin-right: 14px;
+    margin-left: 14px;
+}
+
+.btn-name {
+    text-indent: 10px;
+    width: 40%;
+    text-align: left;
+}
+
+.btn-friendstat {
+    text-align: center;
+    width: 20%;
+}
+
+.btn-mssg {
+    text-align: center;
+    text-align: ;
+    width: 20%;
+}
+
+.profile-img{
     height: 300px;
     width: 300px;
 }
-th{
-    background-color:#99C7FF ;
-    border-radius: 16px;
-    padding-left: 10px;
-}
+
 .add{
     background-color: transparent;
     border: none;
     color:white;
 }
+
 .message{
     background-color: transparent;
     border:none;
     color:white;
 }
-.logo img{
-    height: 50px;
-    width: 50px;
-    margin-top: 2vh;
-    margin-bottom: 3vh;
-    margin-left: 2vh;
+
+.profile-logo{
+    height: 100px;
+    width: 100px;
+}
+
+.logo {
+    height: 32px;
+    width: 32px;
+    margin: 8px;
 }
