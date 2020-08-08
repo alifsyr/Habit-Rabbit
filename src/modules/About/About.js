@@ -18,9 +18,8 @@ class Home extends React.Component {
                         <p class="upper-home-text pb-4 pt-3">
                             <h1>About us</h1>
                             Habbit Rabit, a website to assist you in solving mental health problems with good and easy habits
-                            <br />
+							<br/>
                             Made for SPARTA HMIF 2019's Milestone assignment
-
                         </p>
                         <div className="row row-cols-3">
                             <div className="col col-md mr-0 pr-0 order-0">

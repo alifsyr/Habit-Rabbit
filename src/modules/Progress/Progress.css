@@ -43,7 +43,7 @@
 }
 
 .myBar3 {
-    width: 30%; 
+    width: 40%; 
     height: 50px; 
     background-color:#FDFD96; 
     border-radius: 25px;
@@ -54,7 +54,7 @@
 
 .progress-container .btn {
     background-color: #7B7BFD ;
-    width: 30%;
+    width: 60%;
     border:none;
     border-radius: 25px; 
     color:white; 

@@ -21,29 +21,25 @@ class Progress extends React.Component {
     getRandomChallenges() {
         const MBTI = this.getMBTI();
         
-        var randomChallenges = []
-
-        for(var i = 0; i < data.length; i++) {
-            var obj = data[i];
-            
-            if(obj.type == MBTI[0]){
-                randomChallenges = obj.challenge
-            }
-            if(obj.type == MBTI[1]){
-                randomChallenges.concat(obj.challenge)
-            }
-            if(obj.type == MBTI[2]){
-                randomChallenges.concat(obj.challenge)
-            }
-            if(obj.type == MBTI[4]){
-                randomChallenges.concat(obj.challenge)
-            }
-        }
+        var randomChallenges = [];
+		
+		for(var j=0; j < MBTI.length; j++){
+			for(var i = 0; i < data.length; i++) {
+				var obj = data[i];
+				if(obj.type == MBTI[j]) {
+					for(var k=0; k < obj.challenge.length; k++){
+						randomChallenges.push(obj.challenge[k]);
+					}
+				}
+			}
+		}
+				
+		console.log('random: '+randomChallenges)
 
         var selectedChallenges = [];
 
         while(selectedChallenges.length < 3) {
-            var id = Math.floor(Math.random() * obj.challenge.length);
+            var id = Math.floor(Math.random() * randomChallenges.length);
 
             if(!selectedChallenges.includes(randomChallenges[id])){
             selectedChallenges.push(randomChallenges[id])
