@@ -87,12 +87,14 @@ body{
     border: none;
     color:white;
     justify-content: center;
+    outline: none;
 }
 
 .message{
     background-color: transparent;
     border:none;
     color:white;
+    outline: none;
 }
 
 .profile-logo{

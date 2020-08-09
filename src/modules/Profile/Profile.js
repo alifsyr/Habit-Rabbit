@@ -11,6 +11,15 @@ import Golden from '../../assets/golden.png';
 import Platinum from '../../assets/platinum.png';
 
 class Profile extends React.Component {
+    constructor(props){
+        super(props);
+            this.state={
+                message1:"Add as a friend",
+                message2:"Add as a friend",
+                message3:"Add as a friend",
+        }
+    }
+
     render() {
         return (
             <> 
@@ -82,7 +91,7 @@ class Profile extends React.Component {
                                 <div className="my-1"><input type="button" class="message" value="Send a message"/></div>
                             </div>
                             <div className="col col-md-3 btn-friends">
-                                <div className="my-1"><input type="button" class="add" value="Add as a friend"/></div>
+                                <div className="my-1"><input onClick={()=>this.setState({message1:'Pending...'})} type="button" class="add" value={this.state.message1}/></div>
                             </div>
                         </div>
                         <div className="row">
@@ -94,7 +103,7 @@ class Profile extends React.Component {
                                 <div className="my-1"><input type="button" class="message" value="Send a message"/></div>
                             </div>
                             <div className="col col-md-3 btn-friends">
-                                <div className="my-1"><input type="button" class="add" value="Add as a friend"/></div>
+                                <div className="my-1"><input onClick={()=>this.setState({message2:'Pending...'})} type="button" class="add" value={this.state.message2}/></div>
                             </div>
                         </div>
                         <div className="row">
@@ -106,7 +115,7 @@ class Profile extends React.Component {
                                 <div className="my-1">Private Account</div>
                             </div>
                             <div className="col col-md-3 btn-friends">
-                                <div className="my-1"><input type="button" class="add" value="Add as a friend"/></div>
+                            <div className="my-1"><input onClick={()=>this.setState({message3:'Pending...'})} type="button" class="add" value={this.state.message3}/></div>
                             </div>
                         </div>
                     </div>
