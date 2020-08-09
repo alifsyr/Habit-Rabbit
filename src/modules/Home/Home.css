@@ -141,6 +141,7 @@ a:hover{
   width: 80%;
   height: 100%;
 
+  margin-left: 80vh;
   padding-top: 3vw;
   padding-bottom: 3vh;
 
@@ -159,4 +160,8 @@ a:hover{
   margin: auto 10vw;
 
   border-radius: 10%;
+}
+
+.home-page small {
+  margin-bottom: -30vh;
 }

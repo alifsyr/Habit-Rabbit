@@ -61,24 +61,29 @@ class Home extends React.Component {
                         <p class="quote-left pt-5">“I found that with depression, one of the most important things you can realize is that <strong>you’re not alone</strong>. You’re not the first to go through it, you’re not gonna be the last to go through it,” — Dwayne Johnson</p>
                         </div>
                     </div>
-                    <div className="infographic-2">
-                        <div className="info-content">
+                    <div className="infographic-2 justify-content-start">
+                        <div className="info-content ml-25 ">
                             <img src={Infographic2}/>
                         </div>
                     </div>
-                    <div class="lower-home pt-5 row justify-content-between">
+                    <div class="lower-home pt-5 row justify-content-end">
                         <div className="col-7 lower-home-text ml-5">
                         <p class="quote-right pt-5">“<strong>Mental health</strong>…is not a destination, but a process. It’s about how you drive, not where you’re going.” – Noam Shpancer</p>
                         </div>
                     </div>
-                    <div className="infographic-1">
-                        <div className="info-content">
+                    <div className="infographic-1 justify-content-start">
+                        <div className="info-content ml-25 ">
                             <img src={Infographic3}/>
                         </div>
                     </div>
                     <div className="row pt-5 justify-content-center">
                         <small>
-                            <a href="https://www.freepik.com/vectors/cartoon">Bunny cartoon vector created by Freepik</a>
+                            Bunny cartoon vector created by <a href="https://www.freepik.com/vectors/cartoon">Freepik</a>
+                        </small>
+                    </div>
+                    <div className="row pt-5 justify-content-center">
+                        <small>
+                            Infographic created by <a href="https://www.seafarerswelfare.org/">SeafarerWelfare</a>, <a href="https://www.childrens.com/">Childrens</a>, <a href="https://www.dreamstime.com/">Dreamstime</a>
                         </small>
                     </div>
                 </div>

@@ -23,6 +23,19 @@ class Profile extends React.Component {
                 <div className="h1">
                     <img className="profile-logo m-4" src={Golden}/>Golden Badge 
                 </div>
+                <div className='xp-container'>
+                    <table>
+                        <tr>
+                            <th>
+                                <div className="myXP">
+                                    <div className="myBar">
+                                        200 XP to Platinum Badge
+                                    </div>
+                                </div>
+                            </th>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div className="friends-section p-5">
                 <div class="friends-header">
@@ -58,6 +71,30 @@ class Profile extends React.Component {
                             </div>
                             <div className="col col-md-3 btn-friends">
                                 <div className="my-1">Already your friend</div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <img className="col-0 logo" src={Platinum}/>
+                            <div className="col w-auto btn-friends btn-name">
+                                <div className="my-1">Bob Doe</div>
+                            </div>
+                            <div className="col col-sm-3 btn-friends">
+                                <div className="my-1"><input type="button" class="message" value="Send a message"/></div>
+                            </div>
+                            <div className="col col-md-3 btn-friends">
+                                <div className="my-1"><input type="button" class="add" value="Add as a friend"/></div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <img className="col-0 logo" src={Golden}/>
+                            <div className="col w-auto btn-friends btn-name">
+                                <div className="my-1">James Doe</div>
+                            </div>
+                            <div className="col col-sm-3 btn-friends">
+                                <div className="my-1"><input type="button" class="message" value="Send a message"/></div>
+                            </div>
+                            <div className="col col-md-3 btn-friends">
+                                <div className="my-1"><input type="button" class="add" value="Add as a friend"/></div>
                             </div>
                         </div>
                         <div className="row">

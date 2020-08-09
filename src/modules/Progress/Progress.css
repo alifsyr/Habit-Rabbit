@@ -26,6 +26,7 @@
     color:#444853; 
     border-radius: 25px;
     margin-top: 1vw;
+    margin-left: 2vw;
 }
 
 .myBar1 {
@@ -66,4 +67,5 @@
     color:white; 
     height: 50px;
     margin-top: 1vw;
+    margin-left: 2vw;
 }

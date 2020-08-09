@@ -2,7 +2,7 @@
     background-color: #99C7FF;
     border-bottom-left-radius: 90% 20%;
     border-bottom-right-radius: 90% 20%;
-    height: 580px;
+    height: 700px;
 }
 
 .friends-title {
@@ -74,7 +74,6 @@ body{
 
 .btn-mssg {
     text-align: center;
-    text-align: ;
     width: 20%;
 }
 
@@ -87,6 +86,7 @@ body{
     background-color: transparent;
     border: none;
     color:white;
+    justify-content: center;
 }
 
 .message{
@@ -104,4 +104,31 @@ body{
     height: 32px;
     width: 32px;
     margin: 8px;
+}
+.xp-container {
+    justify-content: center;
+    padding-left: 30vw;
+}
+.xp-container table {
+    width:100%;
+    margin-top: auto;
+}
+.xp-container .myXP {
+    width: 50%;
+    height: 50px; 
+    background-color: white; 
+    color:#444853; 
+    border-radius: 25px;
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+
+.xp-container .myBar {
+    width: 70%; 
+    height: 50px; 
+    background-color:#FDFD96; 
+    border-radius: 25px;
+    margin-top: 1vw;
+    padding-top: 1vw;
+    padding-left: 1vw;
 }
