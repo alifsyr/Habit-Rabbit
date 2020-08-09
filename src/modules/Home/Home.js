@@ -38,41 +38,41 @@ class Home extends React.Component {
                             <div className="col mr-0 pr-0 order-2"></div>
                         </div>
                     </div>
-                    <div class="lower-home pt-5 row justify-content-between">
+                    <div class="lower-home pt-5 row justify-content-center">
                         <div className="col-7 lower-home-text ml-5">
                             <p class="lower-home-text pt-5">Infographic about mental health awareness and benefits of making good habits</p>
                         </div>
-                        <div className="col-sm-auto align-right mr-5">
+                        <div className="col-sm-auto mr-5">
                             <img className="HabRabProgressBar" src={HabRabProgressBar} />
                         </div>
                     </div>
                     <div class="lower-home pt-5 row justify-content-end">
-                        <div className="col-7 lower-home-text ml-5">
-                        <p class="quote-right pt-5">“Mental health problems don’t define who you are. They are something you experience. You walk in the rain and you feel the rain, but, importantly, <strong>YOU ARE NOT THE RAIN</strong>.” — Matt Haig</p>
+                        <div className="col-7 lower-home-text mr-5">
+                        <p class="quote-right">“Mental health problems don’t define who you are. They are something you experience. You walk in the rain and you feel the rain, but, importantly, <strong>YOU ARE NOT THE RAIN</strong>.” — Matt Haig</p>
                         </div>
                     </div>
-                    <div className="infographic-1 justify-content-start">
-                        <div className="info-content ml-25 ">
-                            <img src={Infographic1}/>
+                    <div className="infographic infographic-left justify-content-center">
+                        <div className="info-content ml-5 ">
+                            <img className="" src={Infographic1}/>
                         </div>
                     </div>
                     <div class="lower-home pt-5 row justify-content-between">
                         <div className="col-7 lower-home-text ml-5">
-                        <p class="quote-left pt-5">“I found that with depression, one of the most important things you can realize is that <strong>you’re not alone</strong>. You’re not the first to go through it, you’re not gonna be the last to go through it,” — Dwayne Johnson</p>
+                        <p class="quote-left">“I found that with depression, one of the most important things you can realize is that <strong>you’re not alone</strong>. You’re not the first to go through it, you’re not gonna be the last to go through it,” — Dwayne Johnson</p>
                         </div>
                     </div>
-                    <div className="infographic-2">
-                        <div className="info-content">
+                    <div className="infographic infographic-right justify-content-center">
+                        <div className="info-content mr-5">
                             <img src={Infographic2}/>
                         </div>
                     </div>
-                    <div class="lower-home pt-5 row justify-content-between">
-                        <div className="col-7 lower-home-text ml-5">
-                        <p class="quote-right pt-5">“<strong>Mental health</strong>…is not a destination, but a process. It’s about how you drive, not where you’re going.” – Noam Shpancer</p>
+                    <div class="lower-home pt-5 row justify-content-end">
+                        <div className="col-7 lower-home-text mr-5">
+                        <p class="quote-right">“<strong>Mental health</strong>…is not a destination, but a process. It’s about how you drive, not where you’re going.” – Noam Shpancer</p>
                         </div>
                     </div>
-                    <div className="infographic-1">
-                        <div className="info-content">
+                    <div className="infographic infographic-left justify-content-center">
+                        <div className="info-content ml-5">
                             <img src={Infographic3}/>
                         </div>
                     </div>
