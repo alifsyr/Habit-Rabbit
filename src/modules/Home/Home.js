@@ -78,7 +78,12 @@ class Home extends React.Component {
                     </div>
                     <div className="row pt-5 justify-content-center">
                         <small>
-                            <a href="https://www.freepik.com/vectors/cartoon">Bunny cartoon vector created by Freepik</a>
+                            Bunny cartoon vector created by <a href="https://www.freepik.com/vectors/cartoon">Freepik</a>
+                        </small>
+                    </div>
+                    <div className="row pt-5 justify-content-center">
+                        <small>
+                            Infographic created by <a href="https://www.seafarerswelfare.org/">SeafarerWelfare</a>, <a href="https://www.childrens.com/">Childrens</a>, <a href="https://www.dreamstime.com/">Dreamstime</a>
                         </small>
                     </div>
                 </div>

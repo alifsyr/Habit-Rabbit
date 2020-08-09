@@ -20,6 +20,55 @@ class Progress extends React.Component {
         )
     }
 
+    showPastChallenges() {
+        return(
+            <table>
+                <tr>
+                    <th>
+                        <div className="myProgress">
+                            <div className="myBar2">
+                                Drink a coffee
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div className="btn">
+                            +50 XP
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div className="myProgress">
+                            <div className="myBar2">
+                                Get enough sleep
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div className="btn">
+                            +50 XP
+                        </div>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <div className="myProgress">
+                            <div className="myBar2">
+                                Watch a movie
+                            </div>
+                        </div>
+                    </th>
+                    <th>
+                        <div className="btn">
+                            +50 XP
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        )
+    }
+
     getMBTI() {
         const MBTI = []
         for (let c of getCookie('mbti')){
@@ -113,6 +162,11 @@ class Progress extends React.Component {
                     </th>
                 </tr>
             </table>
+            
+            <h1>
+                Past challenges
+            </h1>
+            {this.showPastChallenges()}
             </div>
             <Footer/>
             </>
