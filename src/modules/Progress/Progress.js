@@ -24,46 +24,46 @@ class Progress extends React.Component {
         return(
             <table>
                 <tr>
-                    <th>
+                    <td className="col-progress">
                         <div className="myProgress">
                             <div className="myBar2">
                                 Drink a coffee
                             </div>
                         </div>
-                    </th>
-                    <th>
+                    </td>
+                    <td className="col-stat">
                         <div className="btn">
                             +50 XP
                         </div>
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td className="col-progress">
                         <div className="myProgress">
                             <div className="myBar2">
                                 Get enough sleep
                             </div>
                         </div>
-                    </th>
-                    <th>
+                    </td>
+                    <td className="col-stat">
                         <div className="btn">
                             +50 XP
                         </div>
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td className="col-progress">
                         <div className="myProgress">
                             <div className="myBar2">
                                 Watch a movie
                             </div>
                         </div>
-                    </th>
-                    <th>
+                    </td>
+                    <td className="col-stat">
                         <div className="btn">
                             +50 XP
                         </div>
-                    </th>
+                    </td>
                 </tr>
             </table>
         )
@@ -122,44 +122,44 @@ class Progress extends React.Component {
             <h1>{this.showCountdown()}</h1>
             <table>
                 <tr>
-                    <th>
+                    <td className="col-progress">
                         <div className="myProgress">
                             <div className="myBar1">
                                 {challenges[0]}
                             </div>
                         </div>
-                    </th>
-                    <th>
+                    </td>
+                    <td className="col-stat">
                         <div className="btn">
                             On Progress
                         </div>
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td className="col-progress">
                         <div className="myProgress">
                             <div className="myBar2">
                                 {challenges[1]}
                             </div>
                         </div>
-                    </th>
-                    <th>
+                    </td>
+                    <td className="col-stat">
                         <div className="btn">
                             Finished
                         </div>
-                    </th>
+                    </td>
                 </tr>
                 <tr>
-                    <th>
+                    <td className="col-progress">
                         <div className="myProgress">
                             <div className="myBar3">
                                 {challenges[2]}
                             </div>
                         </div>
-                    </th>
-                    <th>
+                    </td>
+                    <td className="col-stat">
                         <input type="button" className="btn" value="Start"/>
-                    </th>
+                    </td>
                 </tr>
             </table>
             

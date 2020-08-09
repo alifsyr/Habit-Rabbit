@@ -19,14 +19,25 @@
     margin-top: auto;
 }
 
+.col-progress {
+    width: 75%;
+    padding-right: 1vw;
+    padding-left: 2rem;
+}
+
+.col-stat {
+    width: 25%;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .myProgress {
-    width: 100%;
+    width: 60rem;
     height: 50px; 
     background-color: white; 
     color:#444853; 
     border-radius: 25px;
-    margin-top: 1vw;
-    margin-left: 2vw;
 }
 
 .myBar1 {
@@ -61,11 +72,14 @@
 
 .progress-container .btn {
     background-color: #7B7BFD ;
-    width: 60%;
+    text-align: center;
+    width: 80%;
     border:none;
     border-radius: 25px; 
     color:white; 
     height: 50px;
+    
+    padding-top: 12px;
     margin-top: 1vw;
     margin-left: 2vw;
 }
