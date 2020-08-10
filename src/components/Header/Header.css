@@ -14,18 +14,18 @@
     font-size: 15px;
   }
   
-  .nav-link {
+  .nav-item .nav-link {
     color: #ffffff;
     padding: 15px 25px;
   }
   
-  .nav-link:hover {
+  .nav-item .nav-link:hover {
     text-decoration: none;
     background-color: #437ddb;
     color: #dfdfdf;
   }
   
-  .nav-link{
+  .nav-item .nav-link{
     text-decoration: none;
     color: #ffffff;
     padding: 10px auto;
@@ -65,7 +65,7 @@ li {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {background-color: grey;}
 
 .dropdown:hover .dropdown-content {
   display: block;

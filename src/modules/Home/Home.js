@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 import './Home.css';
 
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
+
+import { NavLink } from 'react-router-dom'
 
 /*Images*/
 import Habitrabbit from "../../assets/white-rabbit.png";
@@ -15,6 +18,14 @@ import Infographic3 from  "../../assets/infographic3.jpg";
 import { getCookie } from '../../services/Cookie';
 
 class Home extends React.Component {
+    constructor(props){
+        super(props);
+    
+        this.state={
+          getStarted: false
+            };
+        }
+
     render() {
         return (
             <div class="body">
@@ -27,7 +38,12 @@ class Home extends React.Component {
                         <div className="row">
                             <div className="col col-md order-1 pt-2">
                                 {!getCookie('login')?
-                                <button className="mx-auto" type="submit" id="get-started"><a href="/signup">Get Started</a></button>
+                                <button className="mx-auto" type="submit" id="get-started"><a><NavLink
+                                to="/signup"
+                                className="nav-link"
+                              >
+                                Get Started
+                              </NavLink></a></button>
                                 :
                                 <></>
                                 }

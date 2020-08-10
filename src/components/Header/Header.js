@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
+
 import './Header.css';
 import { Form, Nav, Navbar, Button } from "react-bootstrap";
 import { NavLink } from 'react-router-dom'
@@ -11,7 +13,7 @@ class Header extends React.Component {
 
     this.state={
       login: false
-        }
+        };
     }
 
     showLoginSignup() {
@@ -44,18 +46,26 @@ class Header extends React.Component {
     
       return(
         <>
-        <NavLink
-          to="/progress"
-          className="nav-link"
-          activeStyle={{ fontWeight: 'bold' }}
-          >
-          Progress
-        </NavLink>
+         <li class="nav-item">
+          <NavLink
+            to="/progress"
+            className="nav-link"
+            activeStyle={{ fontWeight: 'bold' }}
+            >
+            Progress
+          </NavLink>
+         </li>
+        
 
         <div class="dropdown">
           <button class="dropbtn">{message}</button>
           <div class="dropdown-content">
-              <a href="/profile">Profile</a>
+              <NavLink
+                to="/profile"
+                className="nav-link"
+              >
+                Profile
+              </NavLink>
               <a href="/" onClick={(()=>this.logout())}>Logout</a>
           </div>
         </div>
