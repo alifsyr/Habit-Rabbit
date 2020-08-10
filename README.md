@@ -13,6 +13,9 @@
 * Gilbert Christian Sinaga (16519147), Content
 * Muhammad Vito Ibrahim (16519157), Deployment
 
-### Cara menjalankan web: 
+### Cara mengakses web:
+* Ikuti link ini : https://habitrabbit-9.herokuapp.com/
+
+### Cara menjalankan web pada localhost: 
 * Install Node Package Manager (NPM) di https://www.npmjs.com/get-npm atau web lain
 * Untuk me-run website ini, clone repo ini ke folder lokal, ketikkan 'npm start' pada folder hasil cloning GitHub menggunakan GitBash / CMD
